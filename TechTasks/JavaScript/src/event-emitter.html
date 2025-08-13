@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Sandbox</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app">
+    <h1>Event Emmiter</h1>
+    <p>Event Emmiter should have:</p>
+    <ul>
+      <li><code>on</code> method to subscribe</li>
+      <li><code>off</code> method to unsubscribe</li>
+      <li><code>dispatch</code> method to trigger the event</li>
+    </ul>
+    <h2>Usage example</h2>
+    <pre>
+        const emitter = new EventEmitter();
+
+        const fn1 = () => console.log(1);
+        const fn2 = () => console.log(2);
+        
+        emitter.on("some_event", fn1);
+        emitter.on("some_event", fn2);
+        emitter.on("another_event", fn2);
+        
+        emitter.dispatch("some_event");
+
+        emitter.off("some_event", fn1);
+        emitter.dispatch("some_event");
+      </pre>
+  </div>
+
+  <script src="./modules/event-emitter.mjs" type="module"></script>
+</body>
+
+</html>
