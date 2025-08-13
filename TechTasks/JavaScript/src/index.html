@@ -8,6 +8,7 @@
 
 <body>
   <div id="app">
+    <!--
     <h1>Event Emmiter</h1>
     <p>Event Emmiter should have:</p>
     <ul>
@@ -31,10 +32,30 @@
         emitter.off("some_event", fn1);
         emitter.dispatch("some_event");
       </pre>
+    -->
+
+    <h1>promiseAny</h1>
+    <p>
+      Write your own implementation of the promiseAny(promises) function,<br>
+      which works the same way as the built-in `Promise.any` method.
+    </p>
+
+    <p><strong>What `Promise.any` does:</strong></p>
+    <ul>
+      <li>Accepts an array of `promises`</li>
+      <li>
+        <p>Returns a new Promise, which:</p>
+        <ul>
+          <ol>Resolves to the value of the first successfully completed Promise in the array.</ol>
+          <ol>It is rejected with a general error if all Promises in the array failed.</ol>
+        </ul>
+      </li>
+    </ul>
   </div>
 
   <script src="./index.mjs" type="module"></script>
-  <script src="./modules/event-emitter.mjs" type="module"></script>
+  <!-- <script src="./modules/event-emitter.mjs" type="module"></script> -->
+  <script src="./modules/custom-promise-all.mjs" type="module"></script>
 </body>
 
 </html>
