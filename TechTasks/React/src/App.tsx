@@ -1,4 +1,4 @@
-import { TodoList, LoginForm } from "./components";
+import { TodoList, LoginForm, Search } from "./components";
 import "./App.css";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <>
       <TodoList />
       <LoginForm />
+      <Search />
     </>
   );
 }
