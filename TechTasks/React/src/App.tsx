@@ -1,10 +1,11 @@
-import { TodoList } from "./components";
+import { TodoList, LoginForm } from "./components";
 import "./App.css";
 
 function App() {
   return (
     <>
       <TodoList />
+      <LoginForm />
     </>
   );
 }
