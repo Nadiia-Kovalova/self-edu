@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Sandbox</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app">
+    <h1>promiseAll()</h1>
+    <p>
+      Write your own implementation of the promiseAll(promises) function,<br>
+      which works the same way as the built-in `Promise.all` method.
+    </p>
+    <p><strong>What `Promise.all` does:</strong></p>
+    <ul>
+      <li>Accepts an array of promises.</li>
+      <li>
+        <p>Returns a new Promise that:</p>
+        <ol>
+          <li>Resolves when all promises in the array have resolved, returning an array of their resolved values in the
+            same order.</li>
+          <li>Rejects as soon as any promise in the array rejects, with the reason of the first rejected promise.</li>
+          <li>Ignores remaining promises after a rejection.</li>
+        </ol>
+      </li>
+    </ul>
+
+    <p><strong>Your implementation should:</strong></p>
+    <ul>
+      <li>Handle non-array inputs by rejecting with a TypeError.</li>
+      <li>Handle empty arrays by resolving with an empty array.</li>
+      <li>Preserve the order of resolved values corresponding to the input promises.</li>
+      <li>Work with both resolving and rejecting promises.</li>
+    </ul>
+  </div>
+
+  <script src="./modules/custom-promise-all.mjs" type="module"></script>
+</body>
+
+</html>
