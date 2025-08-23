@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Sandbox</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app">
+    <h1>promiseAny()</h1>
+    <p>
+      Write your own implementation of the promiseAny(promises) function,<br>
+      which works the same way as the built-in `Promise.any` method.
+    </p>
+
+    <p><strong>What `Promise.any` does:</strong></p>
+    <ul>
+      <li>Accepts an array of `promises`</li>
+      <li>
+        <p>Returns a new Promise, which:</p>
+        <ul>
+          <ol>Resolves to the value of the first successfully completed Promise in the array.</ol>
+          <ol>It is rejected with a general error if all Promises in the array failed.</ol>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./modules/custom-promise-any.mjs" type="module"></script>
+</body>
+
+</html>
