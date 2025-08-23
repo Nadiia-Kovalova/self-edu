@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Sandbox</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app">
+    <h1>promiseRace()</h1>
+    <p>
+      Write your own implementation of the promiseRace(promises) function,<br>
+      which works the same way as the built-in `Promise.race` method.
+    </p>
+    <p><strong>What `Promise.race` does:</strong></p>
+    <ul>
+      <li>Accepts an array of promises.</li>
+      <li>
+        <p>Returns a new Promise that:</p>
+        <ol>
+          <li>Resolves or rejects as soon as any one of the promises in the array resolves or rejects.</li>
+          <li>Returns the value or reason from that first settled promise (whether fulfilled or rejected).</li>
+          <li>Ignores all other promises after the first one settles.</li>
+        </ol>
+      </li>
+    </ul>
+
+    <p><strong>Your implementation should:</strong></p>
+    <ul>
+      <li>Handle non-array inputs by rejecting with a TypeError.</li>
+      <li>Handle empty arrays by returning a Promise that never settles.</li>
+      <li>Work with both resolving and rejecting promises.</li>
+    </ul>
+  </div>
+
+  <script src="./modules/custom-promise-race.mjs" type="module"></script>
+</body>
+
+</html>
