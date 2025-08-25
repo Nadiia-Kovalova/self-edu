@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Sandbox</title>
+  <meta charset="UTF-8" />
+  <style>
+    .test-case {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .test-passed {
+      background-color: #e6ffed;
+      border-color: #28a745;
+    }
+
+    .test-failed {
+      background-color: #ffe6e6;
+      border-color: #dc3545;
+    }
+
+    pre {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Custom URLSearchParams()</h1>
+    <p>Write a function that takes an object and builds a query string based on it.</p>
+    <p>The number of fields is unlimited.</p>
+    <hr>
+    <h2>Test results</h2>
+    <div id="test-results"></div>
+  </div>
+
+  <script src="./modules/custom-URLSearchParams.mjs" type="module"></script>
+</body>
+
+</html>
