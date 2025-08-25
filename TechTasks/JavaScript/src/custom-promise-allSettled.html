@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Sandbox</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app">
+    <h1>promiseAllSettled()</h1>
+    <p>
+      Write your own implementation of the promiseAllSettled(promises) function,
+      which works the same way as the built-in `Promise.allSettled` method.
+    </p>
+    <p><strong>What `Promise.allSettled` does:</strong></p>
+    <ul>
+      <li>Accepts an array of promises.</li>
+      <li>
+        <p>Returns a new Promise that:</p>
+        <ol>
+          <li>Resolves when all promises in the array have settled (either fulfilled or rejected).</li>
+          <li>The resolved value is an array of objects, each describing the outcome of the corresponding promise.</li>
+          <li>Each object has a `status` property ('fulfilled' or 'rejected') and either a `value` (if fulfilled) or a
+            `reason` (if rejected).</li>
+        </ol>
+      </li>
+    </ul>
+
+    <p><strong>Your implementation should:</strong></p>
+    <ul>
+      <li>Handle non-array inputs by rejecting with a TypeError.</li>
+      <li>Handle empty arrays by resolving with an empty array.</li>
+      <li>Work with both resolving and rejecting promises.</li>
+      <li>Preserve the order of the results corresponding to the input promises.</li>
+    </ul>
+  </div>
+
+  <script src="./modules/custom-promise-allSettled.mjs" type="module"></script>
+</body>
+
+</html>
